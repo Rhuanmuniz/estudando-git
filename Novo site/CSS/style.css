@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-primaria: #20A2FF;
+    --cor-secundaria: #BA17FF;
+    --cor-destaque: #f59e0b;
+    --cor-fundo: #f8fafc;
+    --cor-fundo-card: #ffffff;
+    --cor-texto: #1e293b;
+    --cor-sucesso: #10b981;
+    --cor-borda: #e2e8f0;
+    --sombra: 0 4px 24px rgba(0,0,0,0.08);   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+
+}
+
+header{
+    background-color: var(--cor-fundo-card);
+    border-bottom: 1px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--sombra);
+
+}
+
+.navbar{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.lista-nav{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.logo span{
+    font-size: 1.4rem;
+}
+
+/*Hero Section(faixa azul inicial do site)*/
+
+.hero{
+    background: linear-gradient(135deg, #20A2FF 0%, #BA17FF 60%, #9319FF 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 24px;
+}
+
+.hero h1{
+    font-weight: 700;
+    font-size: 4.0rem;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.8rem;
+    opacity: 0.85;
+}
+
+/* Configuração dos Botões */
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.244);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primario{
+    background-color: white;
+    color: var(--cor-primaria);
+}
+
+.btn-secundario{
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.551);
+}
+
+
+.button-hero{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* seção dos cartões */
+
+.grid-cartoes{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo h2{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.titulo p{
+    color: rgba(0, 0, 0, 0.348);
+}
+
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card{
+    background: var(--cor-fundo-card);
+    border: 1px solid var(--cor-borda);
+    padding: 28px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(4px);
+    box-shadow: var(--sombra);
+}
+
+.card-icone{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.cinza{
+    background: rgba(104, 104, 104, 0.585);
+}
+
+.vermelho{
+    background: rgba(246, 95, 95, 0.234);
+}
+
+.verde{
+    background: rgba(141, 255, 116, 0.442);
+}
+
+.branco{
+    background: rgb(183, 180, 180);
+}
+
+.amarelo{
+    background: rgba(255, 255, 0, 0.388);
+}
